@@ -101,7 +101,52 @@
             
         </div>
 
+        <!-- pets setion -->
+        <div
+            class="flex max-[400px]:flex-col justify-between items-center max-[400px]:gap-5 lg:px-4 max-w-[1300px] mx-auto">
+            <h2 class="font-black text-2xl">Best Deal For you</h2>
+            <button class="btn bg-teal-700 text-white px-6" onclick="sortPetsByPrice()">Sort by Price</button>
+        </div>
+
     </main>
+
+    <!-- loading spinner -->
+    <span id="spinner" class="hidden loading loading-bars loading-lg block mx-auto my-4"></span>
+
+    <section class="flex max-sm:flex-col gap-5 justify-evenly my-5 mx-auto max-w-[1440px] w-11/12">
+
+        <!-- pet details modal -->
+        <dialog id="details_modal" class="outline-0 p-6 rounded-lg">
+            
+        </dialog>
+
+        <!-- not found error section -->
+        <div id="pet-error" class="hidden w-full py-20 max-w-[965px] bg-gray-100 rounded-2xl mt-11">
+
+            <div class="lg:w-max mx-auto text-center space-y-4">
+                <img class="mx-auto" src="./images/error.webp" alt="">
+                <h2 class="font-black text-4xl">No Information Available</h2>
+                <p class="lg:w-[82ch] font-semibold text-gray-500 p-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+
+        </div>
+
+        <!-- all pets section -->
+        <div id="pet-container" class="flex flex-wrap gap-5 justify-center mt-11 max-w-[965px]">
+            
+        </div>
+
+        <!-- liked pets side bar -->
+        <div class="md:min-w-[400px]">
+            <p class="font-semibold text-xl p-2">LIKES</p>
+
+            <div id="pet-sidebar" class="grid grid-cols-2 gap-4 border-2 border-gray-100 rounded-xl p-4 min-h-44">
+
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- svg icons -->
     <svg style="display: none;">
