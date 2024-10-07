@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-lato {
+            font-family: "Lato", sans-serif;
+        }
+
+        dialog::backdrop {
+            background-color: rgba(128, 128, 128, 0.6);
+        }
+    </style>
+</head>
+
+<body class="font-lato">
+    <header>
+        <nav class=" w-11/12 mx-auto my-6 md:my-10">
+            <div class="flex items-center justify-between">
+                <div class="inline-flex items-center gap-2 font-bold text-3xl">
+
+                    <img class="h-5 " src="./images/logo.webp" alt="logo icon">
+                    <h1 class="font-black hidden md:block">Peddy</h1>
+
+                </div>
+                <div class="">
+                    <ul class="flex gap-6 text-gray-500 font-semibold">
+                        <li><a class="hover:text-teal-900" href="#">Home</a></li>
+                        <li><a class="hover:text-teal-900" href="#">Shop</a></li>
+                        <li><a class="hover:text-teal-900" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class=" inline-flex">
+
+                    <button class="rounded-full p-2 btn-ghost border-1 border-teal-800 border-opacity-25">
+                        <svg class="w-5 h-5 ">
+                            <use href="#icon-user" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="lg:w-max mx-auto text-center space-y-5 py-2 md:py-6">
+
+            <h2 class="font-bold text-xl md:text-2xl text-gray-500">Bringing Families Together ❤️‍🔥 </h2>
+            <p class="font-black text-2xl md:text-6xl lg:text-7xl w-[20ch] mx-auto leading-tight">Your Path to Adoption
+                Starts Here</p>
+            <p class="lg:w-[75ch] mx-auto p-1 font-semibold text-gray-600">Begin your journey to find a loving pet
+                today. At Peddy, we connect you with animals in need of forever homes. Start your path to adoption and
+                bring joy
+                to a pet's life.</p>
+            <a class="btn rounded-xl overflow-hidden bg-teal-700 text-white text-lg px-6" href="#adoption-section">View
+                More</a>
+
+            <div>
+                <img class="mx-auto" src="./images/pet.webp"
+                    alt="black cat sitting on orange dog who is lying on a white background">
+            </div>
+        </section>
+    </header>
+
+
+    <!-- svg icons -->
+    <svg style="display: none;">
+
+        <symbol id="icon-user" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentcolor">
+            <path
+                d="M20 22H18V20C18 18.3431 16.6569 17 15 17H9C7.34315 17 6 18.3431 6 20V22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13ZM12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z">
+            </path>
+        </symbol>
+
+        <symbol id="icon-squares" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+        </symbol>
+
+        <symbol id="icon-calendar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+        </symbol>
+
+        <symbol id="icon-gender" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                d="M8 2C8 1.44772 7.55228 1 7 1C6.44772 1 6 1.44772 6 2C6 3.77412 7.04529 5.21867 8.54949 6.09082C7.00745 7.17667 6 8.97068 6 11C6 13.973 8.16229 16.441 11 16.917V19H10C9.44772 19 9 19.4477 9 20C9 20.5523 9.44772 21 10 21H11V23C11 23.5523 11.4477 24 12 24C12.5523 24 13 23.5523 13 23V21H14C14.5523 21 15 20.5523 15 20C15 19.4477 14.5523 19 14 19H13V16.917C15.8377 16.441 18 13.973 18 11C18 8.97068 16.9925 7.17667 15.4505 6.09082C16.9547 5.21867 18 3.77412 18 2C18 1.44772 17.5523 1 17 1C16.4477 1 16 1.44772 16 2C16 3.46016 14.4289 5 12 5C9.5711 5 8 3.46016 8 2ZM16 11C16 13.2091 14.2091 15 12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11Z"
+                fill="currentColor" fill-rule="evenodd" />
+        </symbol>
+
+        <symbol id="icon-dollar" fill="currentColor" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M302.1 358.1C293.2 407.8 251.4 439.4 192 446.4V480c0 17.67-14.28 32-31.96 32S128 497.7 128 480v-34.96c-.4434-.0645-.8359-.0313-1.281-.0977c-26.19-3.766-53.69-13.2-77.94-21.53l-11.03-3.766C21.03 414 12.03 395.8 17.69 379.1s23.88-25.73 40.56-20.08l11.31 3.859c21.59 7.406 46.03 15.81 66.41 18.73c47.09 6.953 97.06-.8438 103.1-34.09c5.188-28.55-11.16-39.89-87.53-60.7L136.5 282.7C92.59 270.4 1.25 244.9 17.97 153C26.82 104.1 68.44 72.48 128 65.51V32c0-17.67 14.33-32 32.02-32S192 14.33 192 32v34.95c.4414 .0625 .8398 .0449 1.281 .1113c16.91 2.531 36.22 7.469 60.72 15.55c16.81 5.531 25.94 23.61 20.41 40.41c-5.531 16.77-23.69 25.86-40.41 20.38c-20.72-6.812-37.12-11.08-50.16-13.02C137 123.4 86.97 131.2 80.91 164.5C76.5 188.8 85.66 202 153.8 221l14.59 4.016C228.3 241.4 318.9 266.1 302.1 358.1z" />
+        </symbol>
+
+        <symbol id="icon-like" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <title />
+            <g data-name="1" id="_1">
+                <path
+                    d="M348.45,432.7H261.8a141.5,141.5,0,0,1-49.52-8.9l-67.5-25.07a15,15,0,0,1,10.45-28.12l67.49,25.07a111.79,111.79,0,0,0,39.08,7h86.65a14.21,14.21,0,1,0,0-28.42,15,15,0,0,1,0-30H368.9a14.21,14.21,0,1,0,0-28.42,15,15,0,0,1,0-30h20.44a14.21,14.21,0,0,0,10.05-24.26,14.08,14.08,0,0,0-10.05-4.16,15,15,0,0,1,0-30h20.45a14.21,14.21,0,0,0,10-24.26,14.09,14.09,0,0,0-10-4.17H268.15A15,15,0,0,1,255,176.74a100.2,100.2,0,0,0,9.2-29.33c3.39-21.87-.79-41.64-12.42-58.76a12.28,12.28,0,0,0-22.33,7c.49,51.38-23.25,88.72-68.65,108a15,15,0,1,1-11.72-27.61c18.72-8,32.36-19.75,40.55-35.08,6.68-12.51,10-27.65,9.83-45C199.31,77,211,61,229.18,55.34s36.81.78,47.45,16.46c24.71,36.36,20.25,74.1,13.48,97.21H409.79a44.21,44.21,0,0,1,19.59,83.84,44.27,44.27,0,0,1-20.44,58.42,44.27,44.27,0,0,1-20.45,58.43,44.23,44.23,0,0,1-40,63Z" />
+                <path
+                    d="M155,410.49H69.13a15,15,0,0,1-15-15V189.86a15,15,0,0,1,15-15H155a15,15,0,0,1,15,15V395.49A15,15,0,0,1,155,410.49Zm-70.84-30H140V204.86H84.13Z" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-facebook" height="100%"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1"
+            viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+                <path
+                    d="M512,256c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
+                    style="fill:#1877f2;fill-rule:nonzero;" />
+                <path
+                    d="M355.65,330l11.35,-74l-71,0l0,-48.022c0,-20.245 9.917,-39.978 41.719,-39.978l32.281,0l0,-63c0,0 -29.297,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.89c13.033,2.045 26.392,3.11 40,3.11c13.608,0 26.966,-1.065 40,-3.11l0,-178.89l59.65,0Z"
+                    style="fill:#fff;fill-rule:nonzero;" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-twitter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" fill="white">
+            <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+            </symbol>
+
+        <symbol id="icon-youtube" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+            xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="_x33_95-youtube">
+                <g>
+                    <path
+                        d="M476.387,144.888c-5.291-19.919-20.878-35.608-40.67-40.933C399.845,94.282,256,94.282,256,94.282    s-143.845,0-179.719,9.674c-19.791,5.325-35.378,21.013-40.668,40.933c-9.612,36.105-9.612,111.438-9.612,111.438    s0,75.334,9.612,111.438c5.29,19.92,20.877,34.955,40.668,40.281C112.155,417.719,256,417.719,256,417.719    s143.845,0,179.717-9.674c19.792-5.326,35.379-20.361,40.67-40.281c9.612-36.104,9.612-111.438,9.612-111.438    S485.999,180.994,476.387,144.888z"
+                        style="fill:#FF0000;" />
+                    <polygon points="208.954,324.723 208.954,187.93 329.18,256.328   " style="fill:#FFFFFF;" />
+                </g>
+            </g>
+            <g id="Layer_1" />
+        </symbol>
+
+        <symbol id="icon-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#F2203E">
+            <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+        </symbol>
+
+    </svg>
+
+</body>
+
+</html>
