@@ -180,7 +180,6 @@ function handleAdopt(element) {
     details_modal.showModal();
     element.innerText = 'Adopted';
     element.setAttribute('disabled', 'disabled');
-    console.log(element);
 }
 
 // show details
