@@ -94,7 +94,7 @@ async function loadPets() {
     petContainer.innerHTML = '';
     finalPets.forEach(item => {
         petContainer.innerHTML +=
-            `<div class="flex flex-col space-y-1 border-2 border-gray-100 rounded-xl p-6">
+            `<div class="flex flex-col space-y-1 border-2 border-gray-100 rounded-xl p-4">
                 <img class="max-w-[250px] rounded-xl" src="${item.image}" alt="${item.breed} image">
                 <h3 class="font-extrabold text-lg pt-2">${item.pet_name}</h3>
                 <p class="inline-flex items-center gap-2 text-gray-500">
@@ -126,7 +126,7 @@ async function loadPets() {
                     <hr>
                 </div>
 
-                <div class="inline-flex gap-4 justify-center">
+                <div class="inline-flex justify-between">
                     <button class="btn btn-ghost border-1 border-teal-500 border-opacity-50 px-6" onclick="handleLike('${item.image}','${item.breed}')">
                         <svg class="w-5 h-5">
                             <use href="#icon-like" />
@@ -166,18 +166,19 @@ function handleAdopt(element) {
                 <p>Adoption Process is Started For your Pet</p>
                 <span class="font-extrabold text-5xl">3</span>
         </div>`;
-    
-        let modalSpan = details_modal.querySelector('span');
 
-        let intervalId = setInterval(()=>{
-            modalSpan.innerText = parseInt(modalSpan.innerText) - 1;
-            if(parseInt(modalSpan.innerText) === 0) {
-                clearInterval(intervalId);
-                details_modal.close();
-            }
-        }, 1000);
+    let modalSpan = details_modal.querySelector('span');
+
+    let intervalId = setInterval(() => {
+        modalSpan.innerText = parseInt(modalSpan.innerText) - 1;
+        if (parseInt(modalSpan.innerText) === 0) {
+            clearInterval(intervalId);
+            details_modal.close();
+        }
+    }, 1000);
 
     details_modal.showModal();
+    element.innerText = 'Adopted';
     element.setAttribute('disabled', 'disabled');
     console.log(element);
 }

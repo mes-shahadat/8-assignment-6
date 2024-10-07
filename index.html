@@ -40,12 +40,12 @@
                 <div class="inline-flex items-center gap-2 font-bold text-3xl">
 
                     <img class="h-5 " src="./images/logo.webp" alt="logo icon">
-                    <h1 class="font-black hidden md:block">Peddy</h1>
+                    <h1 class="font-black">Peddy</h1>
 
                 </div>
 
                 <!-- navbar center -->
-                <div class="">
+                <div class="max-sm:hidden">
                     <ul class="flex gap-6 text-gray-500 font-semibold">
                         <li><a class="hover:text-teal-900" href="#">Home</a></li>
                         <li><a class="hover:text-teal-900" href="#">Shop</a></li>
@@ -54,7 +54,7 @@
                 </div>
 
                 <!-- navbar end -->
-                <div class=" inline-flex">
+                <div class="max-sm:hidden inline-flex">
 
                     <button class="rounded-full p-2 btn-ghost border-1 border-teal-800 border-opacity-25">
                         <svg class="w-5 h-5 ">
@@ -62,6 +62,15 @@
                         </svg>
                     </button>
                 </div>
+
+                <div class="sm:hidden dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn m-1"><img src="./images/icons8-menu-24.png" alt="menu icon"></div>
+                    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a class="hover:text-teal-900" href="#">Home</a></li>
+                        <li><a class="hover:text-teal-900" href="#">Shop</a></li>
+                        <li><a class="hover:text-teal-900" href="#">Contact</a></li>
+                    </ul>
+                  </div>
 
             </div>
         </nav>
@@ -96,7 +105,7 @@
                 Save a life and fill your home with love and happiness. Your new best friend is waiting!.</p>
         </div>
 
-        <!-- pets buttons -->
+        <!-- category buttons -->
         <div id="pet-btns" class="mx-auto flex flex-wrap gap-6 justify-center my-12">
             
         </div>
@@ -121,23 +130,23 @@
         </dialog>
 
         <!-- not found error section -->
-        <div id="pet-error" class="hidden w-full py-20 max-w-[965px] bg-gray-100 rounded-2xl mt-11">
+        <div id="pet-error" class="hidden w-full py-20 max-w-[1010px] bg-gray-100 rounded-2xl mt-11">
 
             <div class="lg:w-max mx-auto text-center space-y-4">
                 <img class="mx-auto" src="./images/error.webp" alt="">
                 <h2 class="font-black text-4xl">No Information Available</h2>
-                <p class="lg:w-[82ch] font-semibold text-gray-500 p-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <p class="lg:w-[82ch] font-semibold text-gray-500 p-3">We're sorry, but it seems there are currently no pets available in this category. Please check back later, as our listings are frequently updated. In the meantime, feel free to explore other categories to find your perfect furry companion!</p>
             </div>
 
         </div>
 
         <!-- all pets section -->
-        <div id="pet-container" class="flex flex-wrap gap-5 justify-center mt-11 max-w-[965px]">
+        <div id="pet-container" class="flex flex-wrap gap-5 justify-center mt-11 max-w-[1010px]">
             
         </div>
 
         <!-- liked pets side bar -->
-        <div class="md:min-w-[400px]">
+        <div class="md:min-w-[400px] max-w-[500px]">
             <p class="font-semibold text-xl p-2">LIKES</p>
 
             <div id="pet-sidebar" class="grid grid-cols-2 gap-4 border-2 border-gray-100 rounded-xl p-4 min-h-44">
@@ -147,6 +156,64 @@
         </div>
 
     </section>
+
+    <footer class="bg-black text-white flex max-sm:flex-col justify-evenly gap-10 px-4 py-20 mt-10">
+
+        <!-- footer start -->
+        <div class="space-y-6">
+            <div class="inline-flex items-center gap-2 font-bold text-3xl">
+
+                <img class="h-5 " src="./images/logo.webp" alt="logo icon">
+                <h2 class="font-black">Peddy</h2>
+
+            </div>
+
+            <div class="space-y-2 font-semibold text-gray-200">
+                <p>Location: av. Washington 165, NY CA <br> 54003</p>
+                <p>Phone: +31 85 964 47 25</p>
+                <p>Email: info@yourdomain.com</p>
+                <p>Openings hours: 9.00 AM - 5.00 PM</p>
+            </div>
+
+            <div class="flex gap-4 items-center">
+                <svg class="w-10 h-10">
+                    <use href="#icon-facebook" />
+                </svg>
+                <svg class="w-10 h-10">
+                    <use href="#icon-twitter" />
+                </svg>
+                <svg class="w-12 h-12">
+                    <use href="#icon-youtube" />
+                </svg>
+                <svg class="w-10 h-10">
+                    <use href="#icon-instagram" />
+                </svg>
+            </div>
+
+        </div>
+
+        <!-- footer center -->
+        <div>
+            <h2 class="font-bold text-lg">Useful Links</h2>
+            <ul class="font-semibold text-gray-300 space-y-2 pt-7">
+                <li><a class="hover:text-teal-500" href="#">Home</a></li>
+                <li><a class="hover:text-teal-500" href="#">About Us</a></li>
+                <li><a class="hover:text-teal-500" href="#">Animals</a></li>
+                <li><a class="hover:text-teal-500" href="#">Foundation</a></li>
+                <li><a class="hover:text-teal-500" href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- footer end -->
+        <div>
+            <h2 class="font-bold text-lg">Drop a Message</h2>
+            <form>
+                <input class="block bg-[#1f1f1f] placeholder-gray-400 rounded-lg px-4 py-2 mt-8 w-full" type="email" placeholder="Enter your email">
+                <button type="reset" class="btn-ghost block w-full text-white bg-teal-700 border-0 py-2 rounded-lg mt-4 hover:outline hover:outline-2 outline-teal-500">Subscribe</button>
+            </form>
+        </div>
+
+    </footer>
 
     <!-- svg icons -->
     <svg style="display: none;">
